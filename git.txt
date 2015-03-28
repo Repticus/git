@@ -19,6 +19,9 @@ git reset HEAD <soubor>     => obnovi soubor v repozitari do stavu z aktualni re
                                ale zmeny v pracovnim adresari zustanou zachovany.
 git reset HEAD^ -- <soubor> => obnovi soubor v repozitari do stavu z predchazejici revize,
                                ale zmeny v pracovnim adresari zustanou zachovany.
+
+git show => vypise posledni revizi vcetne provedenych zmen
+
 git commit             => zapise soubory oznacene k zapsani do nove revize, zepta se na zpravu k revizi obsahujici popis zmeny
 git commit -m "zprava" => zapise soubory oznacene k zapsani do nove revize, pouzije uvedeny text zpravy
 git commit -a          => zapise do nove revize vsechny sledovane soubory u kterych doslo ke zmene, neni potreba pouzit git add
