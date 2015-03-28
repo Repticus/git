@@ -31,3 +31,8 @@ git log -p --word-diff      => pro kazdou revizi vypise seznam zmen ve forme zme
 git log --oneline           => vypise revize na jeden radek a zkrati hashe na 7 znaku
 git log --stat              => vypise statistiky zmen
 git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
+
+git checkout <vetev>    => prepne na zadanou vetev a aktualizuje veskery obsah pracovniho adresare
+git checkout -b <vetev> => vytvori novou vetev a zaroven se na ni prepne
+git checkout <soubor>   => zahodi zmeny daneho souboru a obnovi jej do stavu z posledniho commitu
+git checkout -f         => zahodi vsechny zmeny a obnovi vsechny soubory do stavu z posledniho commitu
