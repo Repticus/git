@@ -11,3 +11,11 @@ git rm -f         => vymaze soubor z pracovniho adresare a zrusi sledovani ikdyz
 git rm --cached   => vymaze soubor pouze ze sledovani
 
 git mv <soubor> <novysoubor> => prejmenuje soubor ve staged i v pracovnim adresari
+
+git reset <vetev>           => obnovi vetev v repozitari do stavu z posledni ulozene revize,
+                               ale zmeny v pracovnim adresari zustanou zachovany.
+git reset <vetev> --hard    => obnovi vetev v repozitari vcetne pracovniho adresare a zahodi veskere zmeny
+git reset HEAD <soubor>     => obnovi soubor v repozitari do stavu z aktualni revize,
+                               ale zmeny v pracovnim adresari zustanou zachovany.
+git reset HEAD^ -- <soubor> => obnovi soubor v repozitari do stavu z predchazejici revize,
+                               ale zmeny v pracovnim adresari zustanou zachovany.
