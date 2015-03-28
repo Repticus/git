@@ -23,3 +23,11 @@ git commit             => zapise soubory oznacene k zapsani do nove revize, zept
 git commit -m "zprava" => zapise soubory oznacene k zapsani do nove revize, pouzije uvedeny text zpravy
 git commit -a          => zapise do nove revize vsechny sledovane soubory u kterych doslo ke zmene, neni potreba pouzit git add
 git commit --amend     => prepise posledni revizi
+
+git log                     => vypise seznam zmen v repozitari
+git log -<pocet>            => omezi vypis na zadany pocet zaznamu
+git log -p                  => pro kazdou revizi vypise seznam zmen v radkove forme
+git log -p --word-diff      => pro kazdou revizi vypise seznam zmen ve forme zmenenych slov
+git log --oneline           => vypise revize na jeden radek a zkrati hashe na 7 znaku
+git log --stat              => vypise statistiky zmen
+git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
