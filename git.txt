@@ -35,6 +35,15 @@ git log --oneline           => vypise revize na jeden radek a zkrati hashe na 7 
 git log --stat              => vypise statistiky zmen
 git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
 
+git branch                 => vypise seznam vetvi v repozitari
+git branch <vetev>         => vytvori novou vetev z aktualni revize
+git branch -d <vetev>      => vymaze zadanou vetev z repozitare pokud jiz slocena
+git branch -D <vetev>      => vymaze zadanou vetev z repozitare bez ohledu na jeji drivejsi zacleneni
+git branch -f <cil> <zdoj> => nahradi cilovou vetev zdrojovou vetvi vcetne historie
+git branch -v              => vypise posledni revizi aktualni vetve
+git branch --merged        => vypise vsechny vetve ktere jsou sloucene s aktualni vetvi
+git branch --no-merged     => vypise vsechny vetve ktere nejsou sloucene s aktualni vetvi
+
 git checkout <vetev>    => prepne na zadanou vetev a aktualizuje veskery obsah pracovniho adresare
 git checkout -b <vetev> => vytvori novou vetev a zaroven se na ni prepne
 git checkout <soubor>   => zahodi zmeny daneho souboru a obnovi jej do stavu z posledniho commitu
