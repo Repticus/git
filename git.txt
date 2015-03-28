@@ -48,3 +48,15 @@ git checkout <vetev>    => prepne na zadanou vetev a aktualizuje veskery obsah p
 git checkout -b <vetev> => vytvori novou vetev a zaroven se na ni prepne
 git checkout <soubor>   => zahodi zmeny daneho souboru a obnovi jej do stavu z posledniho commitu
 git checkout -f         => zahodi vsechny zmeny a obnovi vsechny soubory do stavu z posledniho commitu
+
+git rebase -i <revize> => presklada historii aktualni vetve od revize ktera nasleduje za zadanou revizi dle prikazu nize
+                          p, pick   = zapise revizi beze zmen
+                          r, reword = zapise revizi, ale zmeni zpravu revize
+                          e, edit   = zapise revizi, ale pred pokracovanim se zastavi, je mozno prepsat revizi pomoci amend
+                          s, squash = zapise revizi a slouci ji do predchozi revize, zepta se na zpravu revize
+                          f, fixup  = zapise revizi a slouci ji do predchozi revize, pouzije se zprava predchozi revize
+git rebase -i --root   => presklada historii aktualni vetve od prvni revize
+git rebase <vetev>     => presklada aktualni vetev na zadanou vetev, pak lze provest fast forvard merge v zadane vetvi
+git rebase --continue  => pokracuje v preskladavani historie pri preruseni
+git rebase --skip      => preskoci aktualni revizi a pokracuje v preskladavani historie pri preruseni
+git rebase --abort     => prerusi prikaz rebase a vrati zmeny do puvodniho stavu
