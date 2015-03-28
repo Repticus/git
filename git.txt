@@ -9,3 +9,5 @@ git add -p       => rozdeli zmeny na vice casti, lze takto oznacit k zapisu jen 
 git rm <soubor>   => vymaze soubor z pracovniho adresare i z repozitare a zrusi sledovani
 git rm -f         => vymaze soubor z pracovniho adresare a zrusi sledovani ikdyz soubor jeste neni v repozitari
 git rm --cached   => vymaze soubor pouze ze sledovani
+
+git mv <soubor> <novysoubor> => prejmenuje soubor ve staged i v pracovnim adresari
