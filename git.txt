@@ -1,1 +1,3 @@
 git init => vytvori novy repozitar
+
+git status => vypise aktualni branch a stav souboru
