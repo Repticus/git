@@ -60,3 +60,5 @@ git rebase <vetev>     => presklada aktualni vetev na zadanou vetev, pak lze pro
 git rebase --continue  => pokracuje v preskladavani historie pri preruseni
 git rebase --skip      => preskoci aktualni revizi a pokracuje v preskladavani historie pri preruseni
 git rebase --abort     => prerusi prikaz rebase a vrati zmeny do puvodniho stavu
+
+git merge <vetev> => slouci zadanou vetev do aktualni vetve
