@@ -30,6 +30,8 @@ git commit --amend     => prepise posledni revizi
 git push <server> <vetev> => odesle zadanou vetev na pojmenovany vzdaleny server.
                              Parametry zadaneho serveru musi byt v repozitari ulozeny prikazem git remote.
 
+git remote add <server> <adresa> => prida do repozitare adresu pro vzdaleny server pod zadanym nazvem.
+
 git log                     => vypise seznam zmen v repozitari
 git log -<pocet>            => omezi vypis na zadany pocet zaznamu
 git log -p                  => pro kazdou revizi vypise seznam zmen v radkove forme
