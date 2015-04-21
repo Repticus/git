@@ -62,3 +62,11 @@ git rebase --skip      => preskoci aktualni revizi a pokracuje v preskladavani h
 git rebase --abort     => prerusi prikaz rebase a vrati zmeny do puvodniho stavu
 
 git merge <vetev> => slouci zadanou vetev do aktualni vetve
+
+git stash                    => ulozi zmeny, ktere nebyly odeslany do repozitare prikazem commit do docasneho uloziste
+                                a obnovi soubory v pracovnim adresari do stavu posledni revize.
+git stash list               => vypise seznam zmen v docasnem ulozisti
+git stash show               => vypise seznam souboru v docasnem ulozisti a statistiky zmen
+git stash pop                => obnovi zmeny z docasneho uloziste a smaze zmenu z docasneho uloziste
+git stash pop stash@{index}  => obnovi zadanou zmenu z docasneho uloziste a smaze zmenu z docasneho uloziste
+git stash drop stash@{index} => smaze zmenu z docasneho uloziste
