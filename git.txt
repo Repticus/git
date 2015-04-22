@@ -32,6 +32,8 @@ git push <server> <vetev>       => odesle zadanou vetev na pojmenovany vzdaleny 
 git push <server> --all         => odesle vsechny vetve na zadany server.
 git push <server> --all --prune => odesle vsechny vetve na zadany server a vymaze na serveru vetve, ktere nejsou na lokalnim serveru.
 
+git clone <adresa> => naklonuje repozitar ze zadane adresy do aktualniho adresare. Repozitar bude ulozen do noveho adresare.
+
 git remote add <server> <adresa> => prida do repozitare adresu pro vzdaleny server pod zadanym nazvem.
 
 git log                     => vypise seznam zmen v repozitari
