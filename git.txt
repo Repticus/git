@@ -34,7 +34,9 @@ git push <server> --all --prune => odesle vsechny vetve na zadany server a vymaz
 
 git clone <adresa> => naklonuje repozitar ze zadane adresy do aktualniho adresare. Repozitar bude ulozen do noveho adresare.
 
-git remote add <server> <adresa> => prida do repozitare adresu pro vzdaleny server pod zadanym nazvem.
+git remote show                  => vypise seznam ulozenych pripojeni ke vzdalenym serverum.
+git remote show <server>         => vypise parametry zadaneho pripojeni.
+git remote add <server> <adresa> => prida do repozitare nove pripojeni pro vzdaleny server pod zadanym nazvem a adresou.
 
 git log                     => vypise seznam zmen v repozitari
 git log -<pocet>            => omezi vypis na zadany pocet zaznamu
