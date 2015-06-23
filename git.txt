@@ -26,11 +26,13 @@ git commit -m "zprava" => zapise soubory oznacene k zapsani do nove revize, pouz
 git commit -a          => zapise do nove revize vsechny sledovane soubory u kterych doslo ke zmene, neni potreba pouzit git add
 git commit --amend     => prepise posledni revizi
 
-git push <server> <vetev>       => odesle zadanou vetev na pojmenovany vzdaleny server.
-                                   Parametry zadaneho serveru musi byt v repozitari ulozeny prikazem git remote.
-git push <server> <tag>         => odesle zadany tag na pojmenovany vzdaleny server.
-git push <server> --all         => odesle vsechny vetve na zadany server.
-git push <server> --all --prune => odesle vsechny vetve na zadany server a vymaze na serveru vetve, ktere nejsou na lokalnim serveru.
+git push <server> <vetev>               => odesle zadanou vetev na pojmenovany vzdaleny server
+                                           Parametry zadaneho serveru musi byt v repozitari ulozeny prikazem git remote
+git push <server> --all                 => odesle vsechny vetve na zadany server
+git push <server> --all --prune         => odesle vsechny vetve na zadany server a vymaze na serveru vetve, ktere nejsou na lokalnim serveru
+git push <server> <tag>                 => odesle zadany tag na pojmenovany vzdaleny server
+git push <server> <vetev> --follow-tags => odesle zadanou vetev na pojmenovany vzdaleny server vcetne vsech tagu
+git push <server> :refs/tags/<tag>      => smaze zadany tag ze vzdaleneho serveru
 
 git clone <adresa> => naklonuje repozitar ze zadane adresy do aktualniho adresare. Repozitar bude ulozen do noveho adresare.
 
