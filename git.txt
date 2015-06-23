@@ -39,11 +39,11 @@ git remote show                  => vypise seznam ulozenych pripojeni ke vzdalen
 git remote show <server>         => vypise parametry zadaneho pripojeni.
 git remote add <server> <adresa> => prida do repozitare nove pripojeni pro vzdaleny server pod zadanym nazvem a adresou.
 
-git log                     => vypise seznam zmen v repozitari
-git log -<pocet>            => omezi vypis na zadany pocet zaznamu
-git log -p                  => pro kazdou revizi vypise seznam zmen v radkove forme
+git log                     => vypise seznam revizi
+git log -<pocet>            => vypise seznam revizi a omezi vypis na zadany pocet revizi
+git log -p                  => vypise seznam revizi a pro kazdou revizi vypise seznam zmen v radkove forme
 git log -p --word-diff      => pro kazdou revizi vypise seznam zmen ve forme zmenenych slov
-git log --oneline           => vypise revize na jeden radek a zkrati hashe na 7 znaku
+git log --oneline           => vypise seznam revizi na jeden radek a zkrati hashe na 7 znaku
 git log --stat              => vypise statistiky zmen
 git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
 
