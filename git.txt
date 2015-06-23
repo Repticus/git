@@ -29,6 +29,7 @@ git commit --amend     => prepise posledni revizi
 
 git push <server> <vetev>       => odesle zadanou vetev na pojmenovany vzdaleny server.
                                    Parametry zadaneho serveru musi byt v repozitari ulozeny prikazem git remote.
+git push <server> <tag>         => odesle zadany tag na pojmenovany vzdaleny server.
 git push <server> --all         => odesle vsechny vetve na zadany server.
 git push <server> --all --prune => odesle vsechny vetve na zadany server a vymaze na serveru vetve, ktere nejsou na lokalnim serveru.
 
