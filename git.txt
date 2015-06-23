@@ -48,8 +48,10 @@ git log --oneline           => vypise seznam revizi na jeden radek a zkrati hash
 git log --stat              => vypise statistiky zmen
 git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
 
-git diff          => vypise seznam zmen ktere nebyly oznaceny k zapisu do repozitare prikazem add
-git diff --staged => vypise seznam zmen ktere byly oznaceny k zapisu do repozitare prikazem add
+git diff                   => vypise zmeny ktere nebyly oznaceny k zapisu do repozitare prikazem add
+git diff --staged          => vypise zmeny ktere byly oznaceny k zapisu do repozitare prikazem add
+git diff <revize>          => vypise zmeny od zadane revize
+git diff <revize> <revize> => vypise zmeny mezi zadanymi revizemi
 
 git tag                   => vypise znacky v abecednim poradi
 git tag -l <tag>          => vypise pouze znacky zacinajici uvedenym tagem napr. v1.4.*
