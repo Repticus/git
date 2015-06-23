@@ -21,8 +21,6 @@ git reset HEAD <soubor>     => obnovi soubor v repozitari do stavu z aktualni re
 git reset HEAD^ -- <soubor> => obnovi soubor v repozitari do stavu z predchazejici revize,
                                ale zmeny v pracovnim adresari zustanou zachovany.
 
-git show => vypise posledni revizi vcetne provedenych zmen
-
 git commit             => zapise soubory oznacene k zapsani do nove revize, zepta se na zpravu k revizi obsahujici popis zmeny
 git commit -m "zprava" => zapise soubory oznacene k zapsani do nove revize, pouzije uvedeny text zpravy
 git commit -a          => zapise do nove revize vsechny sledovane soubory u kterych doslo ke zmene, neni potreba pouzit git add
@@ -52,6 +50,9 @@ git diff                   => vypise zmeny ktere nebyly oznaceny k zapisu do rep
 git diff --staged          => vypise zmeny ktere byly oznaceny k zapisu do repozitare prikazem add
 git diff <revize>          => vypise zmeny od zadane revize
 git diff <revize> <revize> => vypise zmeny mezi zadanymi revizemi
+
+git show          => vypise zmeny z posledni revize
+git show <revize> => vypise zmeny v zadane revizi
 
 git tag                   => vypise znacky v abecednim poradi
 git tag -l <tag>          => vypise pouze znacky zacinajici uvedenym tagem napr. v1.4.*
