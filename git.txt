@@ -47,6 +47,12 @@ git log --oneline           => vypise revize na jeden radek a zkrati hashe na 7 
 git log --stat              => vypise statistiky zmen
 git log <revize>...<revize> => vypise pouze zmeny mezi zadanymi revizemi
 
+git tag                   => vypise znacky v abecednim poradi
+git tag -l <tag>          => vypise pouze znacky zacinajici uvedenym tagem napr. v1.4.*
+git tag -a <tag>          => vytvori novy tag na posledni revizi
+git tag -a <tag> <revize> => vytvori novy tag na zadane revizi
+git tag -d <tag>          => smaze zadany tag
+
 git branch                 => vypise seznam vetvi v repozitari
 git branch <vetev>         => vytvori novou vetev z aktualni revize
 git branch -d <vetev>      => vymaze zadanou vetev z repozitare pokud jiz slocena
