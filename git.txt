@@ -3,6 +3,7 @@ git init => vytvori novy repozitar
 git status => vypise aktualni branch a stav souboru
 
 git add <soubor> => oznaci soubor k zapisu do repozitare
+git add -u       => oznaci vsechny zmenene soubory k zapisu do repozitare
 git add -A       => oznaci vsechny nove i zmenene soubory k zapisu do repozitare
 git add -p       => rozdeli zmeny na vice casti, lze takto oznacit k zapisu jen nektere zmeny
 
