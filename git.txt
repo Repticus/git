@@ -95,9 +95,10 @@ git stash                    => ulozi zmeny, ktere nebyly odeslany do repozitare
                                 a obnovi soubory v pracovnim adresari do stavu posledni revize.
 git stash list               => vypise seznam zmen v docasnem ulozisti
 git stash show               => vypise seznam souboru v docasnem ulozisti a statistiky zmen
-git stash pop                => obnovi zmeny z docasneho uloziste a smaze zmenu z docasneho uloziste
-git stash pop stash@{index}  => obnovi zadanou zmenu z docasneho uloziste a smaze zmenu z docasneho uloziste
-git stash drop stash@{index} => smaze zmenu z docasneho uloziste
+git stash pop                => obnovi a pote smaze posledni zmenu z docasneho uloziste
+git stash pop stash@{index}  => obnovi a pote smaze zadanou zmenu z docasneho uloziste
+git stash drop               => smaze posledni zmenu z docasneho uloziste
+git stash drop stash@{index} => smaze zadanou zmenu z docasneho uloziste
 
 git config --global core.autocrlf true => nastavi GIT tak, aby pri commitu konvertoval LF na CRLF
 git config --global core.autocrlf input => nastavi GIT tak, aby pri commitu konvertoval CRLF na LF
