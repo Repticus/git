@@ -34,6 +34,9 @@ git push <server> <tag>                 => odesle zadany tag na pojmenovany vzda
 git push <server> <vetev> --follow-tags => odesle zadanou vetev na pojmenovany vzdaleny server vcetne vsech tagu
 git push <server> :refs/tags/<tag>      => smaze zadany tag ze vzdaleneho serveru
 
+git pull <server>          => synchronizuje vzdalenou vetev na aktualni vetev pomoci merge
+git pull <server> --rebase => presklada vzdalenou vetev na aktualni vetev pomoci rebase
+
 git clone <adresa> => naklonuje repozitar ze zadane adresy do aktualniho adresare. Repozitar bude ulozen do noveho adresare.
 
 git remote show                  => vypise seznam ulozenych pripojeni ke vzdalenym serverum.
