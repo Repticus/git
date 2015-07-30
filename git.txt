@@ -56,6 +56,8 @@ git diff                   => vypise zmeny ktere nebyly oznaceny k zapisu do rep
 git diff --staged          => vypise zmeny ktere byly oznaceny k zapisu do repozitare prikazem add
 git diff <revize>          => vypise zmeny od zadane revize
 git diff <revize> <revize> => vypise zmeny mezi zadanymi revizemi
+git diff --name-only       => vypise pouze nazvy zmenenych souboru
+
 
 git show          => vypise zmeny z posledni revize
 git show <revize> => vypise zmeny v zadane revizi
@@ -104,6 +106,7 @@ git stash pop stash@{index}  => obnovi a pote smaze zadanou zmenu z docasneho ul
 git stash drop               => smaze posledni zmenu z docasneho uloziste
 git stash drop stash@{index} => smaze zadanou zmenu z docasneho uloziste
 
-git config --global core.autocrlf true => nastavi GIT tak, aby pri commitu konvertoval LF na CRLF
-git config --global core.autocrlf input => nastavi GIT tak, aby pri commitu konvertoval CRLF na LF
-git config --global core.autocrlf false => nastavi GIT tak, aby pri commitu nekonvertoval nic
+git config --global core.autocrlf true      => nastavi GIT tak, aby pri commitu konvertoval LF na CRLF
+git config --global core.autocrlf input     => nastavi GIT tak, aby pri commitu konvertoval CRLF na LF
+git config --global core.autocrlf false     => nastavi GIT tak, aby pri commitu nekonvertoval nic
+git config --global core.pager 'less -x1,4' => nastavi sirku tabulatoru pri vypisu diff a show na 3 mezery
