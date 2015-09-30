@@ -47,6 +47,7 @@ git remote add <server> <adresa> => prida do repozitare nove pripojeni pro vzdal
 git log                     => vypise seznam revizi
 git log -<pocet>            => vypise seznam revizi a omezi vypis na zadany pocet revizi
 git log -p                  => vypise seznam revizi a pro kazdou revizi vypise seznam zmen v radkove forme
+git log -p filename			 => vypise seznam revizi pro zadany soubor
 git log -p --word-diff      => pro kazdou revizi vypise seznam zmen ve forme zmenenych slov
 git log --oneline           => vypise seznam revizi na jeden radek a zkrati hashe na 7 znaku
 git log --stat              => vypise statistiky zmen
@@ -74,6 +75,7 @@ git branch -d <vetev>      => vymaze zadanou vetev z repozitare pokud jiz slocen
 git branch -D <vetev>      => vymaze zadanou vetev z repozitare bez ohledu na jeji drivejsi zacleneni
 git branch -f <cil> <zdoj> => nahradi cilovou vetev zdrojovou vetvi vcetne historie
 git branch -v              => vypise posledni revizi aktualni vetve
+git branch -r					=> vypise seznam vzdalenych vetvi v repozitari
 git branch --merged        => vypise vsechny vetve ktere jsou sloucene s aktualni vetvi
 git branch --no-merged     => vypise vsechny vetve ktere nejsou sloucene s aktualni vetvi
 
@@ -82,6 +84,7 @@ git checkout <tag>      => prepne na zadanou verzi oznacenou tagem
 git checkout -b <vetev> => vytvori novou vetev a zaroven se na ni prepne
 git checkout <soubor>   => zahodi zmeny daneho souboru a obnovi jej do stavu z posledniho commitu
 git checkout -f         => zahodi vsechny zmeny a obnovi vsechny soubory do stavu z posledniho commitu
+git checkout -b <lokalnivetev> origin/<vzdalenavetev> => vytvori novou vetev ze vzdalene vetve a zaroven se na ni prepne
 
 git rebase -i <revize> => presklada historii aktualni vetve od revize ktera nasleduje za zadanou revizi dle prikazu nize
                           p, pick   = zapise revizi beze zmen
